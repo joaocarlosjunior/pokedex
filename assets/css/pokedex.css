@@ -1,0 +1,130 @@
+.pokemons {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.pokemon .name {
+  color: #fff;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.pokemon .number {
+  color: #000;
+  opacity: 0.3;
+  text-align: right;
+  font-size: 0.625rem;
+}
+
+.pokemon .detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon .detail .types {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pokemon .detail .types .type {
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 0.625rem;
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  text-align: center;
+}
+
+.pokemon .detail img {
+  max-width: 100%;
+  height: 4.375rem;
+}
+
+@media screen and (min-width: 23.75rem) {
+  .pokemons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 36rem) {
+  .pokemons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .pokemons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.normal {
+  background-color: #a9a878;
+}
+.grass {
+  background-color: #78c84f;
+}
+.ice {
+  background-color: #98d8d8;
+}
+.flying {
+  background-color: #a890f0;
+}
+.psychic {
+  background-color: #f85888;
+}
+.bug {
+  background-color: #a8b821;
+}
+.fire {
+  background-color: #f07f2f;
+}
+.electric {
+  background-color: #f8d030;
+}
+.fighting {
+  background-color: #c03028;
+}
+.rock {
+  background-color: #b7a038;
+}
+.ghost {
+  background-color: #705798;
+}
+.dragon {
+  background-color: #7038f9;
+}
+.water {
+  background-color: #6890f0;
+}
+.poison {
+  background-color: #a040a1;
+}
+.ground {
+  background-color: #e0c069;
+}
+.dark {
+  background-color: #6f5848;
+}
+.steel {
+  background-color: #b8b8d0;
+}
+.fairy {
+  background-color: #ffa3b1;
+}
