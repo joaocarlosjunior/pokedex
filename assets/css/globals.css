@@ -1,0 +1,47 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F6F8FC;
+}
+
+.content {
+    padding: 1rem;
+    background-color: #FFF;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1{
+    text-align: center;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button{
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    background-color: #6c79db;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 62rem) {
+    .content{
+        max-width: 62rem;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
