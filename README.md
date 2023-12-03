@@ -1,5 +1,5 @@
 # Projeto: PokeAPI Explorer
-O "PokeAPI Explorer" é uma aplicação web interativa e divertida que permite aos usuários explorar o vasto mundo dos Pokémon. Utilizando a API do PokeAPI.co, este projeto oferece informações detalhadas sobre centenas de Pokémon, incluindo dados, inicialmente, como nome e tipo.
+O "PokeAPI Explorer" é uma aplicação web interativa e divertida que permite aos usuários explorar o vasto mundo dos Pokémon. Utilizando a API do [PokeAPI.co](https://pokeapi.co/), este projeto oferece informações detalhadas sobre centenas de Pokémon, incluindo dados, inicialmente, como nome e tipo.
 
 ## Índice
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
