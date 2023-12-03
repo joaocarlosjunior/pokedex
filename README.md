@@ -1,5 +1,5 @@
-# Projeto: PokeAPI Explorer
-O "PokeAPI Explorer" é uma aplicação web interativa e divertida que permite aos usuários explorar o vasto mundo dos Pokémon. Utilizando a API do [PokeAPI.co](https://pokeapi.co/), este projeto oferece informações detalhadas sobre centenas de Pokémon, incluindo dados, inicialmente, como nome e tipo.
+# Projeto: PokeDex
+O PokeDex é uma aplicação web interativa e divertida que permite aos usuários explorar o vasto mundo dos Pokémon. Utilizando a API do [PokeAPI.co](https://pokeapi.co/), este projeto oferece informações sobre centenas de Pokémon. Idéia inicial do projeto veio do curso de JavaScript Developer da [Dio](https://www.dio.me/), mas acrescentado algumas outras funcionalidades por minha parte.
 
 ## Índice
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -47,10 +47,15 @@ http://localhost:8080/
 ├── assets
 │   ├── css
 │   │   ├── globals.css
-│   │   └── pokedex.css
+│   │   ├── pokedex.css
+│   │   ├── pokemonDetail.css
+│   │   └── pokemonDetailModal.css
+│   ├── images
+│   │   └── logo-pokedex.png
 │   └── js
 │       ├── main.js
 │       ├── poke-api.js
+│       ├── pokemon-detail.js
 │       └── pokemon-models.js
 └── index.html
 ```
@@ -59,3 +64,4 @@ http://localhost:8080/
 ## Contato
 - João Carlos Júnior
 - [Github](https://github.com/joaocarlosjunior)
+- [Linkedin](https://www.linkedin.com/in/joaocarlosjr/)
