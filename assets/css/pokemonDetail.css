@@ -1,0 +1,268 @@
+.pokemonModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+  gap: 0.25rem;
+  height: 20.625rem;
+}
+
+.pokemon-detail .name {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+
+.pokemon-detail .number {
+  text-align: right;
+}
+
+.pokemon-detail .detail {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
+.pokemon-detail .detail .type {
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 0.625rem;
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  text-align: center;
+}
+
+.pokemon-about {
+  display: flex;
+  padding: 1.25rem;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.pokemon-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-photo img {
+  display: flex;
+  max-height: 9.375rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.infos-pokemon {
+  display: flex;
+  color: #fff;
+}
+
+.box1,
+.box2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.625rem;
+}
+
+.abilities,
+.height,
+.weight {
+  display: flex;
+  gap: 0 3.125rem;
+  color: #b6b9bd;
+}
+
+.abilitie {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  color: #484848;
+}
+
+.valueHeight,
+.valueWeight {
+  color: #484848;
+}
+
+@media screen and (min-width: 58.875rem) {
+  .pokemonModal {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .pokemon-photo {
+    align-items: center;
+    width: 50%;
+  }
+
+  .pokemon-photo img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+  .pokemonAbout {
+    width: 50%;
+    -webkit-box-shadow: -10px 0px 9px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -10px 0px 9px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -10px 0px 9px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  .pokemonInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 2rem 0 0;
+    color: #fff;
+    height: 50%;
+    padding-left: 5%;
+    gap: 0.3125rem;
+    background: hsla(3, 87%, 52%, 1);
+    background: linear-gradient(
+      270deg,
+      hsla(3, 87%, 52%, 1) 50%,
+      hsla(3, 91%, 77%, 1) 100%
+    );
+    background: -moz-linear-gradient(
+      270deg,
+      hsla(3, 87%, 52%, 1) 50%,
+      hsla(3, 91%, 77%, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      270deg,
+      hsla(3, 87%, 52%, 1) 50%,
+      hsla(3, 91%, 77%, 1) 100%
+    );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF231A", endColorstr="#FA948F", GradientType=1 );
+  }
+
+  .pokemonInfo .name {
+    font-size: 3.75rem;
+    text-transform: uppercase;
+  }
+
+  .pokemonInfo .types {
+    display: flex;
+    gap: 0.3125rem;
+  }
+
+  .pokemonInfo .types .type {
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem 0;
+    font-size: 0.625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    width: 3.75rem;
+    text-transform: uppercase;
+  }
+
+  .pokemonDetail {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+  }
+
+  .pokemonDetail .features {
+    display: flex;
+    height: 25%;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #d8d8d8;
+    align-items: center;
+  }
+
+  .pokemonDetail .features .height,
+  .weight {
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-right: 0.0625rem solid #d8d8d8;
+  }
+
+  .abilities {
+    padding: 5%;
+  }
+}
+
+.normal {
+  background-color: #a8a878;
+}
+
+.fire {
+  background-color: #f06630;
+}
+
+.water {
+  background-color: #6890f0;
+}
+
+.grass {
+  background-color: #64d368;
+}
+
+.electric {
+  background-color: #ffd723;
+}
+
+.ice {
+  background-color: #98d8d8;
+}
+
+.ground {
+  background-color: #e0c068;
+}
+
+.flying {
+  background-color: #a890f0;
+}
+
+.poison {
+  background-color: #a040a0;
+}
+
+.fighting {
+  background-color: #c03028;
+}
+
+.psychic {
+  background-color: #f85888;
+}
+
+.dark {
+  background-color: #705848;
+}
+
+.rock {
+  background-color: #b8a038;
+}
+
+.bug {
+  background-color: #a8b820;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.steel {
+  background-color: #b8b8d0;
+}
+
+.dragon {
+  background-color: #7038f8;
+}
+
+.fairy {
+  background-color: #ffaec9;
+}
+
+.roxo {
+  background-color: #6c7adc;
+}
