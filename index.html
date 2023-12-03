@@ -3,45 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="description"
+      content="Explore a incrível diversidade do mundo Pokémon em nosso site de listagem completo! 
+    Encontre informações detalhadas sobre todos os seus Pokémon favoritos, desde estatísticas até evoluções. 
+    Descubra novas espécies, aprofunde-se nas histórias por trás dos Pokémon e aprimore suas habilidades como Treinador. 
+    A jornada começa aqui - mergulhe no universo Pokémon agora!"
+    />
     <!-- Normalize CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
 
-    <!-- Font Roboto -->
+    <!-- Font Lilita One -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Materialize CSS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/globals.css" />
     <link rel="stylesheet" href="./assets/css/pokedex.css" />
+    <link rel="stylesheet" href="./assets/css/pokemonDetail.css" />
+    <link rel="stylesheet" href="./assets/css/pokemonDetailModal.css" />
+
     <title>Pokedex</title>
   </head>
 
   <body>
+    <header class="header-logo">
+      <a tabindex="1" class="logo" href="http://localhost:8080/">
+        <img aria-label="Imagem Logo" aria-description="Imagem da logo do site
+        pokedex" src="/assets/images/logo-pokedex.png">
+      </a>
+    </header>
+
     <section class="content">
+      <div class="content-pokemon">
+        <ol
+          tabindex="2"
+          id="pokemonList"
+          class="pokemons"
+          aria-description="Lista de Pokémons"
+        >
+          <!-- Pokemon Here -->
+        </ol>
 
-      <h1>Pokedex</h1>
-
-      <ol id="pokemonList" class="pokemons">
-        <!-- Pokemon Here -->
-      </ol>
-      
-      <div class="pagination">
-        <button id="loadMore" type="button">Load More</button>
+        <div class="pagination">
+          <button tabindex="4" id="loadMore" type="button">Load More</button>
+        </div>
       </div>
-
     </section>
+
+    <div id="pokemonModal" class="modal">
+      <div class="modal-content" id="pokemonModalContent"></div>
+    </div>
+
+    <footer tabindex="5">
+      <span>Desenvolvido por João Carlos</span>
+    </footer>
 
     <!-- JS -->
     <script src="/assets/js/pokemon-models.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/pokemon-detail.js"></script>
   </body>
 </html>
