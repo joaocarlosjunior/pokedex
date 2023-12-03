@@ -1,16 +1,18 @@
 const pokemonList = document.getElementById("pokemonList");
 const loadMoreButton = document.getElementById("loadMore");
+const logo = document.querySelector(".logo");
 
 const maxRecords = 151;
-const limit = 10;
+let limit = 10;
 let offset = 0;
-let indexPokemon = 0;
 
 function convertPokemonToLi(pokemon) {
-  indexPokemon++;
-  return `  
-    <a href="#" data-value="${indexPokemon}" class="pokemon ${pokemon.type}">
-    <span class="number">#${pokemon.number}</span>
+  return `
+  <li>
+  <a tabindex="3" onclick="pokemonSelected('${pokemon.number}')" class="pokemon ${
+    pokemon.type
+  }" aria-label="Pokémon ${pokemon.name}">
+    <span class="number">#${pokemon.number.toString().padStart(3, "0")}</span>
     <span class="name">${pokemon.name}</span>
 
         <div class="detail">
@@ -19,18 +21,39 @@ function convertPokemonToLi(pokemon) {
                 .map((type) => `<li class="type ${type}">${type}</li>`)
                 .join("")}
             </ol>
-            <img src="${pokemon.photo}"
+            <img aria-label="Pokémon ${pokemon.name}" aria-description="Imagem do pokémon ${pokemon.name}" src="${pokemon.photo}"
                 alt="${pokemon.name}">
         </div>
 
     </a>
+  </li>
+  
     `;
 }
 
-function loadPokemonItens(limit, offset) {
+/* function addSearch() {
+  return `
+    <div class="search-pokemon">
+      <i class="small search"></i>
+      <input type="text" id="txtBusca" placeholder="Buscar..."/>
+      <button id="btnBusca">Buscar</button>
+    </div>
+  `;
+} */
+
+(function checkSizeScreen() {
+  const windowWidth = window.innerWidth;
+
+  if (windowWidth >= 1920) {
+    limit = 28;
+  }
+})();
+
+function loadPokemonsItens(limit, offset) {
   pokeApi
     .getPokemons(limit, offset)
     .then((pokemons) => {
+      pokemonsRequiredApi(pokemons);
       pokemonList.innerHTML += pokemons
         .map((pokemon) => convertPokemonToLi(pokemon))
         .join("");
@@ -38,30 +61,9 @@ function loadPokemonItens(limit, offset) {
     .catch((error) => console.error(error));
 }
 
-loadPokemonItens(limit, offset);
+loadPokemonsItens(limit, offset);
 
 loadMoreButton.addEventListener("click", () => {
   offset += limit;
-
-  const qtdRecordNextPage = offset + limit;
-
-  if (qtdRecordNextPage >= maxRecords) {
-    const newLimit = maxRecords - offset;
-
-    loadPokemonItens(newLimit, offset);
-    loadMoreButton.parentElement.removeChild(loadMoreButton);
-  } else {
-    loadPokemonItens(limit, offset);
-  }
-});
-
-const pokemonItems = document.querySelectorAll(".pokemon");
-
-pokemonItems.forEach((item, index) => {
-  item.addEventListener("click", (event) => {
-    event.preventDefault();
-    const selectedValue = item.getAttribute("data-value");
-    console.log(`Pokemon clicado: ${selectedValue}`);
-  
-  });
+  loadPokemonsItens(limit, offset);
 });
