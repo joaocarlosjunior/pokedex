@@ -78,4 +78,4 @@ http://localhost:8080/
 - [Linkedin](https://www.linkedin.com/in/joaocarlosjr/)
 
 ## Licença
-MIT
+[MIT](https://github.com/joaocarlosjunior/pokedex/blob/main/LICENSE)
