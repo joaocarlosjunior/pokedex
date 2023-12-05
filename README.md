@@ -8,7 +8,7 @@ Este projeto está em constante evolução, e há planos para implementar melhor
 ## Índice
 - [Status do Projeto](#status-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Idéias de Design Utilizadas](#idéias-de-design-utilizadas)
+- [Idéias de Design Utilizadas](#idéias-de-designs-utilizadas)
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Estrutura de Arquivos](#estrutura-de-arquivos)
