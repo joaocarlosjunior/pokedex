@@ -1,5 +1,5 @@
 # Projeto: PokeDex Explorer
-O Pokedex é uma aplicação web interativa e divertida que permite aos usuários explorar o vasto mundo dos Pokémon. Utilizando a API do [PokeAPI.co](https://pokeapi.co/), este projeto oferece informações sobre centenas de Pokémon. 
+O Pokedex é uma aplicação web que permite aos usuários explorar o vasto mundo dos Pokémons. Utilizando a API do [PokeAPI.co](https://pokeapi.co/), este projeto oferece informações sobre centenas de Pokémons. 
 
 Idéia inicial do projeto veio do curso JavaScript Developer da [Dio](https://www.dio.me/), mas acrescentado algumas outras funcionalidades por minha parte.
 
@@ -8,6 +8,7 @@ Este projeto está em constante evolução, e há planos para implementar melhor
 ## Índice
 - [Status do Projeto](#status-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Idéias de Design Utilizadas](#idéias-de-design-utilizadas)
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Estrutura de Arquivos](#estrutura-de-arquivos)
@@ -24,7 +25,14 @@ O projeto está hospedado no site da [Vercel](https://vercel.com/). Você conseg
 - HTML
 - CSS
 
-## Instalação
+## Idéias de Designs Utilizadas
+Foram utilizadas algumas idéias de designs de terceiros, disponibilizados gratuitamente na comunidade [Dribble](https://dribbble.com/).
+
+Visual geral da aplicação feita pelo artista [Yue](https://dribbble.com/shots/5558166-Pokemon-Dashboard).
+
+Visual do modal feita pelo artista [Sujan Khadgi](https://dribbble.com/shots/2475290-User-Profile-DailyUI-006).
+
+## Instalação caso queria executar localmente
 Foi utilizado [Node](https://www.python.org/) v18.18.0
 
 Clone o repositório
