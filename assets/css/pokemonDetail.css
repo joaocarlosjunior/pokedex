@@ -140,6 +140,7 @@
       hsla(3, 91%, 77%, 1) 100%
     );
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF231A", endColorstr="#FA948F", GradientType=1 );
+    position: relative;
   }
 
   .pokemonInfo .name {

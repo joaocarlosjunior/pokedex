@@ -59,6 +59,11 @@ function pokemonDetailDesktop(pokemon) {
 
     <div class="pokemonAbout">
       <div class="pokemonInfo">
+
+        <div class="closeModalButton">
+          <span id="closeModal" class="close">&times;</span>
+        </div>
+
         <span class="number">#${pokemon.number.toString().padStart(3,'0')}</span>
         <span class="name">${pokemon.name}</span>
         <div class="types">
