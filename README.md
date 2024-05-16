@@ -83,7 +83,7 @@ http://localhost:8080/
 ## Contato
 - João Carlos Júnior
 - [Linkedin](https://www.linkedin.com/in/joaocarlosjr/)
-- [Email](mailto:joaocarlos.cic1@gmail.com)
+- [joaocarlos.cic1@gmail.com](mailto:joaocarlos.cic1@gmail.com)
 
 
 ## Licença
