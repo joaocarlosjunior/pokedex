@@ -28,9 +28,9 @@ O projeto está hospedado no site da [Vercel](https://vercel.com/). Você conseg
 ## Idéias de Designs Utilizadas
 Foram utilizadas algumas idéias de designs de terceiros, disponibilizados gratuitamente na comunidade [Dribble](https://dribbble.com/).
 
-Visual geral da aplicação feita pelo artista [Yue](https://dribbble.com/shots/5558166-Pokemon-Dashboard).
+Visual geral da aplicação: [Yue](https://dribbble.com/shots/5558166-Pokemon-Dashboard).
 
-Visual do modal feita pelo artista [Sujan Khadgi](https://dribbble.com/shots/2475290-User-Profile-DailyUI-006).
+Visual do modal:  [Sujan Khadgi](https://dribbble.com/shots/2475290-User-Profile-DailyUI-006).
 
 ## Instalação caso queria executar localmente
 Foi utilizado [Node](https://www.python.org/) v18.18.0
