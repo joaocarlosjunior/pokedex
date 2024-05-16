@@ -82,8 +82,9 @@ http://localhost:8080/
 
 ## Contato
 - João Carlos Júnior
-- [Github](https://github.com/joaocarlosjunior)
 - [Linkedin](https://www.linkedin.com/in/joaocarlosjr/)
+- [Email](mailto:joaocarlos.cic1@gmail.com)
+
 
 ## Licença
 [MIT](https://github.com/joaocarlosjunior/pokedex/blob/main/LICENSE)
